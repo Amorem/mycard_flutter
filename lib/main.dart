@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: Colors.blueAccent,
       body: SafeArea(
         child: Column(
           children: <Widget>[
@@ -28,11 +28,53 @@ class MyApp extends StatelessWidget {
             Text(
               'FULLSTACK DEVELOPER',
               style: TextStyle(
-                  color: Colors.blueGrey,
+                  color: Colors.lightBlueAccent,
                   fontFamily: 'SourceSansPro',
                   fontSize: 20.0,
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold),
+            ),
+            Container(
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              color: Colors.white,
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.phone,
+                    color: Colors.blueAccent,
+                  ),
+                  SizedBox(width: 10.0),
+                  Text(
+                    '01 86 95 41 35',
+                    style: TextStyle(
+                        color: Colors.blueAccent,
+                        fontFamily: "SourceSansPro",
+                        fontSize: 20.0),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(10),
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+              color: Colors.white,
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.mail,
+                    color: Colors.blueAccent,
+                  ),
+                  SizedBox(width: 10.0),
+                  Text(
+                    'cedric@amorem.com',
+                    style: TextStyle(
+                        color: Colors.blueAccent,
+                        fontFamily: "SourceSansPro",
+                        fontSize: 20.0),
+                  )
+                ],
+              ),
             )
           ],
         ),
