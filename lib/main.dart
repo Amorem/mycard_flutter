@@ -34,46 +34,50 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold),
             ),
-            Container(
-              padding: EdgeInsets.all(10),
+            Card(
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
               color: Colors.white,
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.phone,
-                    color: Colors.blueAccent,
-                  ),
-                  SizedBox(width: 10.0),
-                  Text(
-                    '01 86 95 41 35',
-                    style: TextStyle(
-                        color: Colors.blueAccent,
-                        fontFamily: "SourceSansPro",
-                        fontSize: 20.0),
-                  )
-                ],
+              child: Padding(
+                padding: EdgeInsets.all(25),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.blueAccent,
+                    ),
+                    SizedBox(width: 10.0),
+                    Text(
+                      '01 86 95 41 35',
+                      style: TextStyle(
+                          color: Colors.blueAccent,
+                          fontFamily: "SourceSansPro",
+                          fontSize: 20.0),
+                    )
+                  ],
+                ),
               ),
             ),
-            Container(
-              padding: EdgeInsets.all(10),
+            Card(
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
               color: Colors.white,
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.mail,
-                    color: Colors.blueAccent,
-                  ),
-                  SizedBox(width: 10.0),
-                  Text(
-                    'cedric@amorem.com',
-                    style: TextStyle(
-                        color: Colors.blueAccent,
-                        fontFamily: "SourceSansPro",
-                        fontSize: 20.0),
-                  )
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.mail,
+                      color: Colors.blueAccent,
+                    ),
+                    SizedBox(width: 10.0),
+                    Text(
+                      'cedric@amorem.com',
+                      style: TextStyle(
+                          color: Colors.blueAccent,
+                          fontFamily: "SourceSansPro",
+                          fontSize: 20.0),
+                    )
+                  ],
+                ),
               ),
             )
           ],
