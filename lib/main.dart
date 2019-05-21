@@ -12,6 +12,8 @@ class MyApp extends StatelessWidget {
       backgroundColor: Colors.blueAccent,
       body: SafeArea(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             CircleAvatar(
               radius: 50.0,
@@ -34,52 +36,41 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                   fontWeight: FontWeight.bold),
             ),
+            SizedBox(
+                height: 20,
+                width: 150,
+                child: Divider(
+                  color: Colors.lightBlueAccent,
+                )),
             Card(
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              color: Colors.white,
-              child: Padding(
-                padding: EdgeInsets.all(25),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                    leading: Icon(
                       Icons.phone,
                       color: Colors.blueAccent,
                     ),
-                    SizedBox(width: 10.0),
-                    Text(
+                    title: Text(
                       '01 86 95 41 35',
                       style: TextStyle(
                           color: Colors.blueAccent,
                           fontFamily: "SourceSansPro",
                           fontSize: 20.0),
-                    )
-                  ],
-                ),
-              ),
-            ),
+                    ))),
             Card(
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-              color: Colors.white,
-              child: Padding(
-                padding: const EdgeInsets.all(25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.mail,
-                      color: Colors.blueAccent,
-                    ),
-                    SizedBox(width: 10.0),
-                    Text(
-                      'cedric@amorem.com',
-                      style: TextStyle(
-                          color: Colors.blueAccent,
-                          fontFamily: "SourceSansPro",
-                          fontSize: 20.0),
-                    )
-                  ],
-                ),
-              ),
-            )
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    color: Colors.blueAccent,
+                  ),
+                  title: Text(
+                    'cedric@amorem.com',
+                    style: TextStyle(
+                        color: Colors.blueAccent,
+                        fontFamily: "SourceSansPro",
+                        fontSize: 20.0),
+                  ),
+                ))
           ],
         ),
       ),
