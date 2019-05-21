@@ -8,44 +8,35 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.teal,
-        body: SafeArea(
-            child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        home: Scaffold(
+      backgroundColor: Colors.deepPurple,
+      body: SafeArea(
+        child: Column(
           children: <Widget>[
-            Container(
-              height: double.infinity,
-              width: 100.0,
-              color: Colors.redAccent,
-              child: Text('Container 1'),
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/moi.png'),
             ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.yellowAccent,
-                  child: Text('Container 3'),
-                ),
-                Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.greenAccent,
-                  child: Text('Container 4'),
-                )
-              ],
+            Text(
+              'Cedric Tournier',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'Pacifico',
+                  fontSize: 40.0,
+                  fontWeight: FontWeight.bold),
             ),
-            Container(
-              height: double.infinity,
-              width: 100.0,
-              color: Colors.blueAccent,
-              child: Text('Container 2'),
-            ),
+            Text(
+              'FULLSTACK DEVELOPER',
+              style: TextStyle(
+                  color: Colors.blueGrey,
+                  fontFamily: 'SourceSansPro',
+                  fontSize: 20.0,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold),
+            )
           ],
-        )),
+        ),
       ),
-    );
+    ));
   }
 }
